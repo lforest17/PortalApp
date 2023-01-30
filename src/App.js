@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
+import { ThemeProvider } from "@mui/material";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { ErrorBoundary } from "features/error/ErrorBoundary";
+import theme from "layouts/theme";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AppRouter from "routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <ErrorBoundary>
+        <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+          <AppRouter />
+          <ToastContainer />
+        </GoogleOAuthProvider>
+      </ErrorBoundary>
+    </ThemeProvider>
   );
 }
 
