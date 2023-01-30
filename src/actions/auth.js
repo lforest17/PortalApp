@@ -1,10 +1,10 @@
 import authService from "services/auth.service";
 import { LOGIN_FAIL, LOGIN_SUCCESS, LOGOUT, REFRESH_TOKEN } from "./types";
 
-export const refreshToken = (accessToken) => (dispatch) => {
+export const refreshToken = (token) => (dispatch) => {
   dispatch({
     type: REFRESH_TOKEN,
-    payload: accessToken,
+    payload: token,
   });
 };
 

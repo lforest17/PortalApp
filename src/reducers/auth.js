@@ -36,7 +36,7 @@ const appReducer = (state = initialState, action) => {
     case REFRESH_TOKEN:
       return {
         ...state,
-        user: { ...user, accessToken: payload },
+        user: { ...user, token: payload },
       };
     default:
       return state;
