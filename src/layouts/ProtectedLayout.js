@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 const TABS = [
   {
-    title: "Manage insurances",
-    link: "/manage",
+    title: "Home",
+    link: "/home",
   },
   {
     title: "Portfolio",

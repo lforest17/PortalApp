@@ -65,7 +65,7 @@ const Login = () => {
 
   useEffect(() => {
     if (isLoggedIn) {
-      navigate("/manage");
+      navigate("/home");
     }
   }, [navigate, isLoggedIn]);
 
