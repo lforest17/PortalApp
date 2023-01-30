@@ -23,6 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 |Page|Screenshot|
 |---|---|
 |Login|<img width="600" alt="image" src="https://user-images.githubusercontent.com/123918612/215385434-a5c688c2-454b-4e88-af7a-afd9f0b7f256.png">|
-|Manage Insurance|<img width="600" alt="image" src="https://user-images.githubusercontent.com/123918612/215385322-43ae8d43-cf52-4205-95e7-ecee4b78ef08.png">|
+|Home|<img width="600" alt="image" src="https://user-images.githubusercontent.com/123918612/215408434-93f5a672-97d9-4544-bdd7-4daf73c46a36.png">|
+|Error|<img width="600" alt="image" src="https://user-images.githubusercontent.com/123918612/215408535-e3d1fb26-ec6d-458b-aa93-e7341c6d112f.png">|
 
 
